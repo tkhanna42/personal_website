@@ -2,9 +2,63 @@
   box-sizing: border-box; 
 }
 
+nav {
+  background-color: rgba(0,145,234,0.2);
+}
+
+ul.sidenav {
+  background-color: rgba(4,29,42,0.8);
+}
+
+footer.page-footer, footer>div {
+  background-color: transparent;
+}
+
+.carousel {
+  height: 100%;
+  overflow-y: visible;
+  margin-top: -100px;
+}
+
+.carousel-item {
+  height: 100%;
+  width: 25rem;
+}
+
+section#home {
+  background: url("../images/starrynight.jpg");
+    background-size: cover;
+}
+
+section#contact {
+  background: url("../images/bghome2.jpg");
+}
+
+@media only screen and (min-width: 992px) {
+  .carousel {
+    perspective: 1500px;
+  }
+  
+  .carousel .carousel-item {
+    width: 300px;
+  }
+  
+}
+
+div.deepbluebg {
+  background-color: rgba(0,0,0,0.5);
+  padding: 10px;
+}
+
+div.blackbg {
+  background-color: rgba(0,0,0,0.5);
+  padding: 10px;
+}
+
 .main-content {
   text-align: center;
 }
+
 footer {
   text-align: center;
   margin-bottom: 20px;
@@ -14,8 +68,13 @@ footer {
   color: white;
 }
 
+/* html {
+  background-color: black;
+} */
+
 body {
-  background-color: #0091ea;
+/*   background-color: black; */
+  background: url("../images/dark_stripes.png");
   color: white;
 }
 
@@ -36,6 +95,7 @@ h1 {
 footer > div > a {
   margin:0 0.5rem;
   
+  
 }
 
 i.fa {
@@ -55,45 +115,35 @@ i.fa:hover {
 a.brand-logo > img {
   margin-top: 10px;
 }
+
  section {
   width: 100%;
   padding: 0;
   display: table;
-/*   margin: 0; */
   max-width: none;
-/*   background-color: #373B44; */
-   padding: auto;
+  padding: auto;
   height: 100vh;
-}
-
-section > div {
-  
-  margin: 700px 0;
 }
 
 p.flow-text {
   font-weight: 200;
-/*   text-align: justify; */
 }
 
 input, textarea {
   color: white;
 }
 
+html, body { margin: 0; }
+
 section > div.container {
   margin: 70px auto;
   height: inherit;
-}
-
-section > div.container > div {
-/*   padding-top: 50%; */
 }
 
 nav {
   position: fixed;
   z-index: 1;
 }
-
 
 .sidenav-overlay {
   background-color: rgba(0, 0, 0, 0.1);
@@ -103,17 +153,15 @@ ul.sidenav > img {
   padding:5%;
 }
 
-/* label color */
-   .input-field label, .input-field label.active {
-     color: #607d8b;
-   }
-   /* label focus color */
-    .input-field input[type=text]:focus + label, .input-field input[type=email]:focus + label, .materialize-textarea:focus:not([readonly]) + label {
-     color: #0091ea !important;
-    }
+.input-field label, .input-field label.active {
+  color: #607d8b;
+}
 
-/* label underline focus color */
-    .input-field input[type=text]:focus,.input-field input[type=email]:focus, .materialize-textarea:focus:not([readonly]) {
-     border-bottom: 1px solid #0091ea !important;
-     box-shadow: 0 1px 0 0 #0091ea !important;
-    }
+.input-field input[type=text]:focus + label, .input-field input[type=email]:focus + label, .materialize-textarea:focus:not([readonly]) + label {
+     color: #0091ea !important;
+}
+
+.input-field input[type=text]:focus,.input-field input[type=email]:focus, .materialize-textarea:focus:not([readonly]) {
+  border-bottom: 1px solid #0091ea !important;
+  box-shadow: 0 1px 0 0 #0091ea !important;
+}

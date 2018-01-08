@@ -3,9 +3,8 @@
 
 <head>
   <meta charset="UTF-8">
-  <title>Tarun Khanna</title>
+  <title>PortfolioV0.0.3</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="icon" type="image/png" href="./favicon.ico">
 
   <link rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-alpha.3/css/materialize.css'>
   <link rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css'>
@@ -19,10 +18,10 @@
 <body>
 
   <header>
-    <nav class="light-blue accent-4 fixed">
+    <nav class="fixed">
       <div class="nav-wrapper container">
         <a href="#home" class="brand-logo">
-          <img src="images/logo50px.png" alt="TK">
+          <img src="./images/logo50px.png" alt="TK">
         </a>
         <a href="#" data-target="mobile-demo" class="sidenav-trigger">
           <i class="material-icons">menu</i>
@@ -37,19 +36,21 @@
           <li>
             <a href="#contact">Contact</a>
           </li>
-          </li>
           <li>
-            <a href="resume.pdf" target="_blank">Resume</a>
+            <a href="./resume.pdf" target="_blank">Resume</a>
           </li>
         </ul>
 
       </div>
+      <!--   <div class="blue-triangle"></div> -->
     </nav>
-    <ul class="sidenav white-text light-blue accent-4" id="mobile-demo">
+    <ul class="sidenav white-text" id="mobile-demo">
 
-      <img src="images/logo.png" alt="TK" width="100%">
+      <a href="#home" class="brand-logo">
+        <img src="./images/logo.png" alt="TK" width="100%">
+      </a>
       <li>
-        <a href="resume.pdf" target="_blank">Resume</a>
+        <a href="./resume.pdf" target="_blank">Resume</a>
       </li>
       <li>
         <a href="#home">Home</a>
@@ -68,33 +69,36 @@
 
       <section id="home" class="black">
         <div class="container">
+
           <br>
           <br>
           <br>
-          <h1>
-            <span class="light-blue-text text-accent-4">T</span>arun
-            <span class="light-blue-text text-accent-4">K</span>hanna</h1>
-          <div>
-            <p class="flow-text">I'm a
-              <span class="light-blue-text text-accent-4">Computer Science</span> student at the
-              <span class="light-blue-text text-accent-4">University of Waterloo</span>.
-              <br>I go to a lot of
-              <span class="light-blue-text text-accent-4">hackathons</span>.
-              <br>I
-              <span class="light-blue-text text-accent-4">learn</span> by
-              <span class="light-blue-text text-accent-4">doing</span>.</p>
+          <div class="blackbg">
+            <h1>
+              <span class="light-blue-text text-accent-4">T</span>arun
+              <span class="light-blue-text text-accent-4">K</span>hanna</h1>
+            <div>
+              <p class="flow-text">I'm a
+                <span class="light-blue-text text-accent-4">Computer Science</span> student at the
+                <span class="light-blue-text text-accent-4">University of Waterloo</span>.
+                <br>I go to a lot of
+                <span class="light-blue-text text-accent-4">hackathons</span>.
+                <br>I
+                <span class="light-blue-text text-accent-4">learn</span> by
+                <span class="light-blue-text text-accent-4">doing</span>.</p>
+            </div>
           </div>
         </div>
       </section>
-      <section id="projects" class="blue-grey darken-4">
+      <section id="projects" class="">
         <div class="container">
           <h1 class="header">
             <span class="light-blue-text text-accent-4">P</span>rojects</h1>
-          <div class="row">
-            <div class="col s12 m4">
+          <div class="row carousel">
+            <div class="carousel-item">
               <div class="card hoverable black">
                 <div class="card-image">
-                  <img src="images/memonic.png">
+                  <img src="./images/memonic.png">
                 </div>
                 <div class="card-content light-blue-text text-accent-4">
                   <span class="card-title">
@@ -106,10 +110,10 @@
                 </div>
               </div>
             </div>
-            <div class="col s12 m4">
+            <div class="carousel-item">
               <div class="card hoverable black">
                 <div class="card-image">
-                  <img src="images/crookedplant.png">
+                  <img src="./images/crookedplant.png">
                 </div>
                 <div class="card-content light-blue-text text-accent-4">
                   <span class="card-title">
@@ -122,10 +126,10 @@
                 </div>
               </div>
             </div>
-            <div class="col s12 m4">
+            <div class="carousel-item">
               <div class="card hoverable black">
                 <div class="card-image">
-                  <img src="images/nexlec.png">
+                  <img src="./images/nexlec.png">
                 </div>
                 <div class="card-content light-blue-text text-accent-4">
                   <span class="card-title">
@@ -141,12 +145,10 @@
                 </div>
               </div>
             </div>
-          </div>
-          <div class="row">
-            <div class="col s12 m4">
+            <div class="carousel-item">
               <div class="card hoverable black">
                 <div class="card-image">
-                  <img src="images/tictactoe.png">
+                  <img src="./images/tictactoe.png">
                 </div>
                 <div class="card-content light-blue-text text-accent-4">
                   <span class="card-title">
@@ -158,10 +160,10 @@
                 </div>
               </div>
             </div>
-            <div class="col s12 m4">
+            <div class="carousel-item">
               <div class="card hoverable black">
                 <div class="card-image">
-                  <img src="images/medalert.png">
+                  <img src="./images/medalert.png">
                 </div>
                 <div class="card-content light-blue-text text-accent-4">
                   <span class="card-title">
@@ -173,10 +175,10 @@
                 </div>
               </div>
             </div>
-            <div class="col s12 m4">
+            <div class="carousel-item">
               <div class="card hoverable black">
                 <div class="card-image">
-                  <img src="images/puzzleapp.png">
+                  <img src="./images/puzzleapp.png">
                 </div>
                 <div class="card-content light-blue-text text-accent-4">
                   <span class="card-title">
@@ -191,13 +193,13 @@
         </div>
       </section>
       <section id="contact" class="black">
-        <div class="container">
+        <div class="container deepbluebg">
           <h1 class="header">
             <span class="light-blue-text text-accent-4">C</span>ontact</h1>
 
           <div>
             <div class="row">
-              <div class="col s12 l8 offset-l2">
+              <div class="col s12 l8 offset-l2" id="messageForm">
                 <div class="input-field col s12">
                   <input id="name" type="text" class="validate">
                   <label for="name">Name</label>
@@ -216,7 +218,7 @@
                   <label for="message">Message</label>
                 </div>
                 <div class="input-field col s12">
-                  <a class="btn-large waves-effect waves-light light-blue accent-4">Send
+                  <a class="pulse btn-large waves-effect waves-light light-blue accent-4" id="sendMessage">Send
                   </a>
                 </div>
               </div>
@@ -228,19 +230,20 @@
 
     </div>
   </main>
-  <footer class="page-footer light-blue accent-4">
+  <footer class="page-footer">
 
     <div class="col s12 m6">
+
       <a href="https://github.com/tkhanna42" target="_blank">
         <i class="fa fa-github fa-4"></i>
       </a>
       <a href="https://www.linkedin.com/in/tkhanna42/" target="_blank">
         <i class="fa fa-linkedin-square"></i>
       </a>
-      <a href="https://devpost.com/tennispro1213" target="_blank">
+      <a href="https://devpost.com/tennispro1213">
         <i class="fa fa-code"></i>
       </a>
-      <a href="resume.pdf" target="_blank">
+      <a href="./resume.pdf" target="_blank">
         <i class="fa fa-file-text"></i>
       </a>
       <a href="https://twitter.com/tkhanna42" target="_blank">
